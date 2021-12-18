@@ -11,6 +11,7 @@
     writeoutput(solvePart2(inp))
     
     function solvePart1( inp ) {
+        //// Can't find my solution for Part 1???
 return false
     }
     
