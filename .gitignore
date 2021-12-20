@@ -1,0 +1,6 @@
+server*.json
+**/box.json
+*.workspace
+*.code-workspace
+.vscode
+/logs/*
