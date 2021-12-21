@@ -31,8 +31,23 @@
     function solvePart2( inp ) {
         var retval = 0 ;
         
+        var a = inp.avg().floor() ;
+
+        var s7 = [] ;        
+        inp.map( (el)=> {
+            var y = [] ;
+            var l = abs(el-a)
+            for (var x=1; x<=l; x++) {
+                y[x] = l-(x-1)
+            }
+            s7.append( y.sum() ) ; 
+        } ) ;
+
+        retval = s7.sum();
+
         return retval
-       //// ANSWER :  
+        //// ANSWER :  101618153 TOO HIGH
+        ////           101618069 RIGHT ANSWER
     }
 
     /******************* UTILITIES *********************/
